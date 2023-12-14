@@ -1,0 +1,264 @@
+body {
+  background-color: #d7d7d7;
+  color: black;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.header{
+  width: 100%;
+  height: 80px;
+  display: block;
+  background-color: #A4CA9A;
+  box-shadow: inset 0 0 0 1px black;
+}
+
+.inner-header{
+  width: 90%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo_container{
+  height:100%;
+  display: table;
+  float: left;
+}
+
+.logo_container h1{
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 36px;
+  margin: 0; /* Remove any default margins */
+}
+
+.logo_container a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  line-height: 2.20;
+}
+
+
+
+.navigation{
+  float: right;
+  height: 100%
+}
+
+.navigation a{
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 16px;
+}
+
+
+.navigation a:last-child{
+  padding-right: 16;
+}
+
+.navigation a li{
+  color: black;
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
+}
+
+.body{
+  background-color: #A4CA9A;
+  display: grid;
+  grid-template-columns: auto 1fr; /* First column width based on content, second column takes remaining space */
+  grid-gap: 20px; /* Spacing between columns */
+  align-items: center; /* Centers content vertically */
+  justify-items: center; /* Centers content horizontally */
+  height: 90vh; /* Adjust the height value as needed */
+}
+
+@keyframes slide-left-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.personal-wrapper {
+  display: flex;
+  justify-content: center; /* Aligns content to the center horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 100%; /* Fill the height of the left column */
+  width: 100%; /* Fill the width of the left column */
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centers content horizontally */
+
+}  
+
+.personal {
+  animation: slide-left-right 1s ease-in-out;
+  max-width: 60%;
+  max-height: calc(100% - 40px);
+  border-radius: 20px;
+  object-fit: contain;
+  width: auto;
+  height: auto;
+}
+
+
+
+
+
+.text{
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  animation: slide-left-right 1s ease-in-out;
+}
+
+.name{
+  font-size: 100px;
+}
+
+@keyframes underline-left-to-right {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* Apply the animation to your text elements */
+.underline-animation span {
+  position: relative;
+  overflow: hidden;
+}
+
+.underline-animation span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #000; /* Change the color to suit your design */
+  animation: underline-left-to-right 5s linear forwards;
+}
+
+.roles{
+  font-size: 32px;
+}
+
+.footer {
+  width: 100%;
+  padding: 30px 0;
+  box-sizing: border-box;
+  background-color: #A4CA9A;
+  box-shadow: inset 0 0 0 1px black;
+  box-sizing: border-box;
+}
+
+.inner_footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1100px;
+  height: 100%;
+}
+
+/* Add media query for smaller screens to adjust the footer */
+@media screen and (max-width: 768px) {
+  .inner_footer {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Add the following styles for sticky footer */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.body {
+  flex: 1;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inner_footer_first,
+.inner_footer_second,
+.inner_footer_third {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.inner_footer_first .logo_container img {
+  max-width: 50%;
+  height: auto;
+}
+
+
+.inner_footer_third h3 {
+  text-align: center;
+}
+
+.inner_footer_third .follow-icons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Add styles to individual icons */
+.inner_footer_third .follow-icons img {
+  width: 5%;
+  height: 5%px; /* Set the desired icon height */
+  margin: 5px; /* Adjust the spacing between icons */
+}
+
+/* Style the "Follow Me" text */
+.inner_footer_third h3 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.inner_footer_third ul {
+  list-style: none;
+  padding: 0;
+}
+
+.inner_footer_third li {
+  text-align: center;
+  margin: 5px 0;
+}
+
+
+
+.navigation a:not(.active):hover {
+  background-color: white;
+}

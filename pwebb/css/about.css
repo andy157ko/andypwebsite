@@ -1,0 +1,320 @@
+.body {
+  background-color: #A4CA9A;
+  height: 90vh;
+  text-align: center;
+  position: relative;
+  padding-top: 30px; /* Add padding to the top of the body container */
+}
+
+.abt {
+  font-size: 36px;
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+  margin: 0; /* Remove the default margin for the "About Me" heading */
+  padding-bottom: 10px;
+}
+
+.description {
+  max-width: 600px;
+  background-color: #BED4B7;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto; /* Center the description box horizontally */
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.edu {
+  background-color: #BED4B7;
+  font-size: 36px;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+
+.edudescription {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Split the grid into four columns */
+  align-items: center;
+  background-color: #BED4B7;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+
+.text-content {
+  background-color: #BED4B7;
+  font-size: 20px;
+  padding: 10px 0; /* Add padding to the top and bottom of the text content */
+  text-align: center; /* Align the text in the center of its grid cell */
+}
+
+.cert {
+  padding-top: 25px;
+  background-color: #A4CA9A;
+  font-size: 36px;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+
+.certdescription{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  background-color: #A4CA9A;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.logos {
+  max-width: 75%;
+  height: 50%; /* Set a percentage height for the logos */
+}
+
+.individual h2{
+  padding-bottom: 10px;
+}
+
+.link {
+  font-size: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #BED4B7;
+  padding: 5px;
+}
+.certprogress {
+  padding-top: 25px;
+  background-color: #BED4B7;
+  font-size: 36px;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+
+.progressdescription{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  background-color: #BED4B7;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.progress-bar-container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #BED4B7;
+  border-radius: 5px;
+  height: 20px;
+  overflow: hidden; /* Hide any overflowing progress */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #00539B;
+  transition: width 0.5s ease; /* Add a smooth transition effect */
+}
+
+.percentage-label {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+  font-family: 'Permanent Marker', cursive;
+  color: #333; /* Change the color to your preference */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .edu {
+    font-size: 30px; /* Adjust the font size for smaller screens */
+  }
+
+  .duke-logo {
+    max-width: 150px; /* Adjust the maximum width for smaller screens */
+  }
+
+  .text-content {
+    font-size: 16px; /* Adjust the font size for smaller screens */
+  }
+}
+
+
+
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.header{
+  width: 100%;
+  height: 80px;
+  display: block;
+  background-color: #A4CA9A;
+  box-shadow: inset 0 0 0 1px black;
+}
+
+.inner-header{
+  width: 90%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo_container{
+  height:100%;
+  display: table;
+  float: left;
+}
+
+.logo_container h1{
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 36px;
+  margin: 0; /* Remove any default margins */
+}
+
+.logo_container a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  line-height: 2.20;
+}
+
+.navigation{
+  float: right;
+  height: 100%
+}
+
+.navigation a{
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 16px;
+}
+
+.navigation a:last-child{
+  padding-right: 16;
+}
+
+.navigation a li{
+  color: black;
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
+}
+
+.body{
+  background-color: #A4CA9A;
+}
+
+.footer {
+  width: 100%;
+  padding: 30px 0;
+  box-sizing: border-box;
+  background-color: #A4CA9A;
+  box-shadow: inset 0 0 0 1px black;
+  box-sizing: border-box;
+}
+
+.inner_footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1100px;
+  height: 100%;
+}
+
+/* Add media query for smaller screens to adjust the footer */
+@media screen and (max-width: 768px) {
+  .inner_footer {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Add the following styles for sticky footer */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.body {
+  flex: 1;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inner_footer_first,
+.inner_footer_second,
+.inner_footer_third {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.inner_footer_first .logo_container img {
+  max-width: 50%;
+  height: auto;
+}
+
+
+.inner_footer_third h3 {
+  text-align: center;
+}
+
+.inner_footer_third .follow-icons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Add styles to individual icons */
+.inner_footer_third .follow-icons img {
+  width: 5%;
+  height: 5%px; /* Set the desired icon height */
+  margin: 5px; /* Adjust the spacing between icons */
+}
+
+/* Style the "Follow Me" text */
+.inner_footer_third h3 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.inner_footer_third ul {
+  list-style: none;
+  padding: 0;
+}
+
+.inner_footer_third li {
+  text-align: center;
+  margin: 5px 0;
+}
+
+
+
+.navigation a:not(.active):hover {
+  background-color: white;
+}
